@@ -13,11 +13,12 @@ namespace _20210920
             //feladat1();
             //feladat2();
             //feladat3();
-            //feladat4();
+            feladat4();
             //feladat5();
             //feladat6();
             //feladat7();
-            feladat8();
+            //feladat8();
+
 
 
         }
@@ -146,6 +147,31 @@ namespace _20210920
                 Console.WriteLine("A víz gáz halmazállapotú");
             }
             Console.ReadLine();
+        }
+        static void feladat9()
+        {
+            Console.WriteLine("Kérek egy számot : ");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if (szam%3==0 && szam%4==0 && szam%9==0)
+            {
+                Console.WriteLine("A szám osztahtó 3-mal 4-el és 9-el is");
+            }
+            else if(szam%3==0 && szam%4==0)
+            {
+                Console.WriteLine("A szám osztahtó 3-mal és 4-el");
+            }
+            else if(szam%3==0)
+            {
+                Console.WriteLine("A szám osztható 3-mal");
+            }
+            else if(szam%3==0 && szam%9==0)
+            {
+                Console.WriteLine("A szám 3-mal és 9-el osztahtó");
+            }
+            else if(szam%4==0 && szam%9==0)
+            {
+                Console.WriteLine("A szám 4-el és 9-el osztható");
+            }
         }
         
         
