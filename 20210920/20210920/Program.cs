@@ -13,11 +13,13 @@ namespace _20210920
             //feladat1();
             //feladat2();
             //feladat3();
-            feladat4();
+            //feladat4();
             //feladat5();
             //feladat6();
             //feladat7();
             //feladat8();
+            feladat9();
+
 
 
 
@@ -172,6 +174,19 @@ namespace _20210920
             {
                 Console.WriteLine("A szám 4-el és 9-el osztható");
             }
+            else if(szam%4==0)
+            {
+                Console.WriteLine("A szám 4-el osztható");
+            }
+            else if(szam%9==0)
+            {
+                Console.WriteLine("A szám 9-el osztható");
+            }
+            else
+            {
+                Console.WriteLine("Egyikkel sem osztható");
+            }
+            Console.ReadLine();
         }
         
         
