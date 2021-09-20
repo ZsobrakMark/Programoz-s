@@ -12,7 +12,7 @@ namespace _20210920
         {
             //feladat1();
             //feladat2();
-            feladat3();
+            //feladat3();
         }
         static void feladat1()
         {
@@ -55,6 +55,19 @@ namespace _20210920
                 Console.WriteLine("Nincs kint fagy");
             }
             Console.ReadLine();
+        }
+        static void feladat4()
+        {
+            Console.WriteLine("Kérek egy számot");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if (-30<szam<40)
+            {
+                Console.WriteLine("A szám a tartományban van");
+            }
+            else
+            {
+                Console.WriteLine("A szám nincs a tartományban");
+            }
         }
     }
 }
