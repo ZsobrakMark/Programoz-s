@@ -13,7 +13,8 @@ namespace _20210920
             //feladat1();
             //feladat2();
             //feladat3();
-            feladat4();
+            //feladat4();
+            //feladat5();
         }
         static void feladat1()
         {
@@ -68,6 +69,22 @@ namespace _20210920
             else
             {
                 Console.WriteLine("A szám nincs a tartományban");
+            }
+            Console.ReadLine();
+        }
+        static void feladat5()
+        {
+            Console.WriteLine("Kérek egy számot :");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if (szam<16)
+            {
+                szam = szam * 16;
+                Console.WriteLine(szam);
+            }
+            else if(szam>=16)
+            {
+                szam = szam / 3;
+                Console.WriteLine(szam);
             }
             Console.ReadLine();
         }
