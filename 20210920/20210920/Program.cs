@@ -18,7 +18,9 @@ namespace _20210920
             //feladat6();
             //feladat7();
             //feladat8();
-            feladat9();
+            //feladat9();
+            //feladat10();
+            //feladat11();
 
 
 
@@ -162,13 +164,14 @@ namespace _20210920
             {
                 Console.WriteLine("A szám osztahtó 3-mal és 4-el");
             }
-            else if(szam%3==0)
-            {
-                Console.WriteLine("A szám osztható 3-mal");
-            }
+
             else if(szam%3==0 && szam%9==0)
             {
                 Console.WriteLine("A szám 3-mal és 9-el osztahtó");
+            }
+            else if (szam % 3 == 0)
+            {
+                Console.WriteLine("A szám osztható 3-mal");
             }
             else if(szam%4==0 && szam%9==0)
             {
@@ -178,15 +181,45 @@ namespace _20210920
             {
                 Console.WriteLine("A szám 4-el osztható");
             }
-            else if(szam%9==0)
-            {
-                Console.WriteLine("A szám 9-el osztható");
-            }
+           
             else
             {
                 Console.WriteLine("Egyikkel sem osztható");
             }
             Console.ReadLine();
+        }
+        static void feladat10()
+        {
+            Console.WriteLine("Kérem az évszámot :");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if(szam%4==0)
+            {
+                Console.WriteLine("A megadott év szökőév");
+            }
+            else
+            {
+                Console.WriteLine("A megadott év nem szökőév");
+            }
+            Console.ReadLine();
+        }
+        static void feladat11()
+        {
+            Console.WriteLine("Kérek az a szakaszt :");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Kérek a b szakaszt :");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Kérek a c szakaszt :");
+            int c = Convert.ToInt32(Console.ReadLine());
+            if(a + b > c && a + c > b && b + c > a)
+            {
+                Console.WriteLine("A háromszög szerkezthető");
+            }
+            else
+            {
+                Console.WriteLine("A háromszög nem szerkezthető");
+            }
+            Console.ReadLine();
+
         }
         
         
