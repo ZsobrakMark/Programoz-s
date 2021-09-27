@@ -11,7 +11,8 @@ namespace _20210927
         static void Main(string[] args)
         {
             //feladat12();
-            feladat13();
+            //feladat13();
+            feladat14();
 
             Console.ReadLine();
         }
@@ -109,6 +110,39 @@ namespace _20210927
                     break;
                 default:
                     Console.WriteLine("Rossz számot adtál meg");
+                    break;
+            }
+        }
+        static void feladat14()
+        {
+            Console.WriteLine("Kérek egy számot ");
+            long szam = Convert.ToInt64(Console.ReadLine());
+            while (szam > 2000000000)
+            {
+                Console.WriteLine("Nem jó számot adtál meg");
+                Console.WriteLine("Kérek egy számot ");
+                szam = Convert.ToInt64(Console.ReadLine());
+            }
+
+            switch (Convert.ToString(szam).Length)
+            {
+                case 1:
+                        Console.WriteLine("egyjegyű");
+                    break;
+                case 2:
+                        Console.WriteLine("kétjegyű");
+                    break;
+                case 3:
+                        Console.WriteLine("háromjegyű");
+                    break;
+                case 4:
+                       Console.WriteLine("Négyjegyű");
+                    break;
+                case 5:
+                    Console.WriteLine("őtjegyű");
+                    break;
+                case 6:
+                        Console.WriteLine("hat vagy többjegyű");
                     break;
             }
         }
