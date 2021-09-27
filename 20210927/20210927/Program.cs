@@ -10,7 +10,9 @@ namespace _20210927
     {
         static void Main(string[] args)
         {
-            feladat12();
+            //feladat12();
+            feladat13();
+
             Console.ReadLine();
         }
         static void feladat12()
@@ -62,5 +64,54 @@ namespace _20210927
 
             }
         }
+        static void feladat13()
+        {
+            Console.WriteLine("Kérek egy számot 1-12-ig");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            int honap = szam;
+            switch (honap)
+            {
+                case 1:
+                    Console.WriteLine("Tél");
+                    break;
+                case 2:
+                    Console.WriteLine("Tél");
+                    break;
+                case 3:
+                    Console.WriteLine("Tavasz");
+                    break;
+                case 4:
+                    Console.WriteLine("Tavasz");
+                    break;
+                case 5:
+                    Console.WriteLine("Tavasz");
+                    break;
+                case 6:
+                    Console.WriteLine("Nyár");
+                    break;
+                case 7:
+                    Console.WriteLine("Nyár");
+                    break;
+                case 8:
+                    Console.WriteLine("Nyár");
+                    break;
+                case 9:
+                    Console.WriteLine("Ősz");
+                    break;
+                case 10:
+                    Console.WriteLine("Ősz");
+                    break;
+                case 11:
+                    Console.WriteLine("Ősz");
+                    break;
+                case 12:
+                    Console.WriteLine("Tél");
+                    break;
+                default:
+                    Console.WriteLine("Rossz számot adtál meg");
+                    break;
+            }
+        }
+        
     }
 }
