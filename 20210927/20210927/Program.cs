@@ -14,7 +14,8 @@ namespace _20210927
             //feladat13();
             //feladat14();
             //feladat16();
-            feladat15();
+            //feladat15();
+            //ciklus1();
 
             Console.ReadLine();
         }
@@ -191,6 +192,18 @@ namespace _20210927
            else
             {
                 Console.WriteLine("Nem ment át");
+            }
+        }
+        static void ciklus1()
+        {
+            for (int i = 0; i <= 20; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            for (int i = 0; i <= 20; i++)
+            {
+                Console.Write(i +" " );
             }
         }
     }
