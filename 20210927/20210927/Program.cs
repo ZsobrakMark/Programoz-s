@@ -12,7 +12,9 @@ namespace _20210927
         {
             //feladat12();
             //feladat13();
-            feladat14();
+            //feladat14();
+            //feladat16();
+            feladat15();
 
             Console.ReadLine();
         }
@@ -20,8 +22,7 @@ namespace _20210927
         {
             Console.WriteLine("Kérek egy számot 1-12-ig");
             int szam = Convert.ToInt32(Console.ReadLine());
-            int honap = szam;
-            switch (honap)
+            switch (szam)
             {
                 case 1:
                     Console.WriteLine("Január");
@@ -146,6 +147,51 @@ namespace _20210927
                     break;
             }
         }
-        
+        static void feladat16()
+        {
+            Console.WriteLine("Kérek egy osztályzatot");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            while (szam > 5)
+            {
+                Console.WriteLine("Nemlétező érdemjegyet adtál meg");
+                Console.WriteLine("Kérek egy osztályzatot ");
+                szam = Convert.ToInt32(Console.ReadLine());
+            }
+            switch (szam)
+            {
+                case 1:
+                    Console.WriteLine("Elégtelen");
+                    break;
+                case 2:
+                    Console.WriteLine("Elégséges");
+                    break;
+                case 3:
+                    Console.WriteLine("Közepes");
+                    break;
+                case 4:
+                    Console.WriteLine("Jó");
+                    break;
+                case 5:
+                    Console.WriteLine("Jeles");
+                    break;
+            }
+        }
+        static void feladat15()
+        {
+            Console.WriteLine("Kérek egy osztályzatot");
+            double szam = Convert.ToDouble(Console.ReadLine());
+           if (szam>1.49 && szam<=5)
+            {
+                Console.WriteLine("Átment");
+            }
+           else if(szam>5)
+            {
+                Console.WriteLine("Nem létező osztályzatot adtál meg");
+            }
+           else
+            {
+                Console.WriteLine("Nem ment át");
+            }
+        }
     }
 }
